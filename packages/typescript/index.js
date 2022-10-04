@@ -72,8 +72,6 @@ module.exports = defineConfig({
     '@typescript-eslint/no-redeclare': 'error',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
-    'brace-style': 'off',
-    '@typescript-eslint/brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
     'object-curly-spacing': 'off',
@@ -107,17 +105,6 @@ module.exports = defineConfig({
     '@typescript-eslint/no-loss-of-precision': 'error',
     'lines-between-class-members': 'off',
     '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
-
-    // The following rule overrides require a parser service, aka. require a `typescript.json` path.
-    // This needs to be done individually for each project, and it slows down linting significantly.
-    // 'no-throw-literal': 'off',
-    // '@typescript-eslint/no-throw-literal': 'error',
-    // 'no-implied-eval': 'off',
-    // '@typescript-eslint/no-implied-eval': 'error',
-    // 'dot-notation': 'off',
-    // '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }],
-    // '@typescript-eslint/no-floating-promises': 'error',
-    // '@typescript-eslint/no-misused-promises': 'error',
 
     // off
     '@typescript-eslint/consistent-indexed-object-style': 'off',

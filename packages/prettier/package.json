@@ -1,0 +1,35 @@
+{
+  "name": "@xbmlz/eslint-config-prettier",
+  "version": "0.1.8",
+  "description": "ESLint config preset",
+  "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
+  "license": "MIT",
+  "homepage": "https://github.com/xbmlz/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbmlz/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xbmlz/eslint-config/issues"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-yml": "^1.1.0",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0"
+  }
+}
