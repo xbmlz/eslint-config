@@ -1,27 +1,27 @@
 {
-    "name": "@xbmlz/eslint-config",
-    "version": "0.1.5",
-    "description": "ESLint config presets",
-    "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
-    "license": "MIT",
-    "homepage": "https://github.com/xbmlz/eslint-config",
-    "keywords": [
-      "eslint-config"
-    ],
-    "main": "index.js",
-    "files": [
-      "index.js"
-    ],
-    "publishConfig": {
-      "access": "public"
-    },
-    "peerDependencies": {
-      "eslint": ">=7.4.0"
-    },
-    "dependencies": {
-      "@xbmlz/eslint-config-vue": "workspace:*"
-    },
-    "devDependencies": {
-      "eslint": "^8.23.0"
-    }
+  "name": "@xbmlz/eslint-config",
+  "version": "0.1.6",
+  "description": "ESLint config presets",
+  "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
+  "license": "MIT",
+  "homepage": "https://github.com/xbmlz/eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@xbmlz/eslint-config-vue": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0"
   }
+}
