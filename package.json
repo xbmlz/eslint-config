@@ -6,12 +6,11 @@
   "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint .",
-    "test": "pnpm -r run test",
-    "prepare": "pnpm -r run stub",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "lint": "eslint . --ext .js,.ts,.json,.json5,.vue,.md --fix",
+    "release": "bumpp package.json packages/*/package.json && pnpm publish -r"
   },
   "devDependencies": {
+    "@xbmlz/eslint-config": "workspace:*",
     "bumpp": "^8.2.1",
     "eslint": "^8.23.0",
     "typescript": "^4.8.2"

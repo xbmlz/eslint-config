@@ -35,9 +35,9 @@ module.exports = defineConfig({
     // https://github.com/import-js/eslint-plugin-import#importextensions
     'import/resolver': {
       node: {
-        extensions: ['.js', '.mjs', '.ts', '.d.ts']
-      }
-    }
+        extensions: ['.js', '.mjs', '.ts', '.d.ts'],
+      },
+    },
   },
   overrides: [
     // json https://ota-meshi.github.io/eslint-plugin-jsonc/rules
@@ -111,7 +111,7 @@ module.exports = defineConfig({
               'import',
             ],
           },
-        ]
+        ],
       },
     },
     // js ts
@@ -160,14 +160,13 @@ module.exports = defineConfig({
     },
   ],
   rules: {
-    // import https://github.com/import-js/eslint-plugin-import
+    // https://eslint.bootcss.com/docs/rules/xxx
     'import/order': 'error',
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
     'import/no-unresolved': 'off',
     'import/no-absolute-path': 'off',
 
-    // common https://eslint.bootcss.com/docs/xxx
     // 分号
     'semi': ['error', 'never'],
     // 未使用过的变量
@@ -208,5 +207,140 @@ module.exports = defineConfig({
     ],
 
     // es6
+    // 禁止使用var
+    'no-var': 'error',
+    // 建议使用const
+    'prefer-const': [
+      'warn',
+      {
+      // 在解构中，所有变量都应该是const，该规则将发出警告。否则，忽略它们
+        destructuring: 'all',
+        ignoreReadBeforeAssign: true,
+      },
+    ],
+    // 要求使用箭头函数作为回调
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
+    ],
+    // 要求对象字面量简写语法
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      },
+    ],
+    // 建议使用剩余参数代替 arguments
+    'prefer-rest-params': 'error',
+    // 建议使用扩展语法而非.apply()
+    'prefer-spread': 'error',
+    // 建议使用模板字面量而非字符串连接
+    'prefer-template': 'error',
+    // 强制模板字符串中空格的使用
+    'template-curly-spacing': 'error',
+    // 禁止使用不带 await 表达式的 async 函数
+    'require-await': 'error',
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          markers: ['/'],
+          exceptions: ['/', '#'],
+        },
+        block: {
+          markers: ['!'],
+          exceptions: ['*'],
+          balanced: true,
+        },
+      },
+    ],
+
+    // best-practice
+    // 强制数组方法的回调函数中有 return 语句
+    'array-callback-return': 'error',
+    // 把 var 语句看作是在块级作用域范围之内
+    'block-scoped-var': 'error',
+    // 要求使用 === 和 !==
+    'eqeqeq': ['error', 'smart'],
+    // 禁用 Alert
+    'no-alert': 'warn',
+    // 禁止在 case 或 default 子句中出现词法声明
+    'no-case-declarations': 'error',
+    // 禁止 case 语句落空
+    'no-fallthrough': ['warn', { commentPattern: 'break[\\s\\w]*omitted' }],
+    // 禁止多行字符串
+    'no-multi-str': 'error',
+    // 禁用 with 语句
+    'no-with': 'error',
+    // 禁止使用void操作符
+    'no-void': 'error',
+    // 禁止 if 语句作为唯一语句出现在 else 语句块中
+    'no-lonely-if': 'error',
+    // 要求将变量声明放在它们作用域的顶部
+    'vars-on-top': 'error',
+    // 强制操作符使用一致的换行符风格
+    'operator-linebreak': ['error', 'before'],
+
+    // unicorns
+    'unicorn/better-regex': 'error',
+    'unicorn/custom-error-definition': 'error',
+    'unicorn/error-message': 'error',
+    'unicorn/escape-case': 'error',
+    'unicorn/explicit-length-check': 'error',
+    'unicorn/import-index': 'error',
+    'unicorn/new-for-builtins': 'error',
+    'unicorn/no-array-callback-reference': 'error',
+    'unicorn/no-array-method-this-argument': 'error',
+    'unicorn/no-array-push-push': 'error',
+    'unicorn/no-console-spaces': 'error',
+    'unicorn/no-for-loop': 'error',
+    'unicorn/no-hex-escape': 'error',
+    'unicorn/no-instanceof-array': 'error',
+    'unicorn/no-invalid-remove-event-listener': 'error',
+    'unicorn/no-lonely-if': 'error',
+    'unicorn/no-new-array': 'error',
+    'unicorn/no-new-buffer': 'error',
+    'unicorn/no-unsafe-regex': 'off',
+    'unicorn/number-literal-case': 'error',
+    'unicorn/prefer-add-event-listener': 'error',
+    'unicorn/prefer-array-find': 'error',
+    'unicorn/prefer-array-flat-map': 'error',
+    'unicorn/prefer-array-index-of': 'error',
+    'unicorn/prefer-array-some': 'error',
+    'unicorn/prefer-date-now': 'error',
+    'unicorn/prefer-dom-node-append': 'error',
+    'unicorn/prefer-dom-node-dataset': 'error',
+    'unicorn/prefer-dom-node-remove': 'error',
+    'unicorn/prefer-dom-node-text-content': 'error',
+    'unicorn/prefer-includes': 'error',
+    'unicorn/prefer-keyboard-event-key': 'error',
+    'unicorn/prefer-math-trunc': 'error',
+    'unicorn/prefer-modern-dom-apis': 'error',
+    'unicorn/prefer-negative-index': 'error',
+    'unicorn/prefer-node-protocol': 'error',
+    'unicorn/prefer-number-properties': 'error',
+    'unicorn/prefer-optional-catch-binding': 'error',
+    'unicorn/prefer-prototype-methods': 'error',
+    'unicorn/prefer-query-selector': 'error',
+    'unicorn/prefer-reflect-apply': 'error',
+    'unicorn/prefer-string-replace-all': 'error',
+    'unicorn/prefer-string-slice': 'error',
+    'unicorn/prefer-string-starts-ends-with': 'error',
+    'unicorn/prefer-string-trim-start-end': 'error',
+    'unicorn/prefer-type-error': 'error',
+    'unicorn/throw-new-error': 'error',
+
+    'eslint-comments/disable-enable-pair': 'off',
+
+    'jsonc/quote-props': 'off',
+    'jsonc/quotes': 'off',
+
+    'yml/no-empty-mapping-value': 'off',
   },
 })

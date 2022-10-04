@@ -1,0 +1,7 @@
+{
+  "npm.packageManager": "pnpm",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

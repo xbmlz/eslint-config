@@ -12,11 +12,14 @@
     "files": [
       "index.js"
     ],
+    "publishConfig": {
+      "access": "public"
+    },
     "peerDependencies": {
       "eslint": ">=7.4.0"
     },
     "dependencies": {
-
+      "@xbmlz/eslint-config-vue": "workspace:*"
     },
     "devDependencies": {
       "eslint": "^8.23.0"
