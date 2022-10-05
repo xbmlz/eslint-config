@@ -1,6 +1,6 @@
 {
   "name": "@xbmlz/eslint-config-monorepo",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": true,
   "packageManager": "pnpm@7.1.0",
   "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
