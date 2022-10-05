@@ -16,9 +16,11 @@ importers:
 
   packages/all:
     specifiers:
+      '@xbmlz/eslint-config-prettier': workspace:*
       '@xbmlz/eslint-config-vue': workspace:*
       eslint: ^8.23.0
     dependencies:
+      '@xbmlz/eslint-config-prettier': link:../prettier
       '@xbmlz/eslint-config-vue': link:../vue
     devDependencies:
       eslint: 8.24.0

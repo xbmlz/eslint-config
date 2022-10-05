@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@xbmlz/eslint-config-vue'],
+  extends: ['@xbmlz/eslint-config-vue', '@xbmlz/eslint-config-prettier'],
 }

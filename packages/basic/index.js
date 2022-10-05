@@ -1,4 +1,4 @@
-const { defineConfig } =  require('eslint-define-config')
+const { defineConfig } = require('eslint-define-config')
 
 module.exports = defineConfig({
   env: {
@@ -105,11 +105,7 @@ module.exports = defineConfig({
           },
           {
             pathPattern: '^exports.*$',
-            order: [
-              'types',
-              'require',
-              'import',
-            ],
+            order: ['types', 'require', 'import'],
           },
         ],
       },
@@ -168,11 +164,11 @@ module.exports = defineConfig({
     'import/no-absolute-path': 'off',
 
     // 分号
-    'semi': ['error', 'never'],
+    semi: ['error', 'never'],
     // 未使用过的变量
     'no-unused-vars': 'warn',
     // 使用单引号 https://eslint.bootcss.com/docs/rules/quotes#single
-    'quotes': ['error', 'single'],
+    quotes: ['error', 'single'],
     // 对象属性名根据需要保持一致 https://eslint.bootcss.com/docs/rules/quote-props#consistent-as-needed
     'quote-props': ['error', 'consistent-as-needed'],
     // 代码块空格
@@ -213,7 +209,7 @@ module.exports = defineConfig({
     'prefer-const': [
       'warn',
       {
-      // 在解构中，所有变量都应该是const，该规则将发出警告。否则，忽略它们
+        // 在解构中，所有变量都应该是const，该规则将发出警告。否则，忽略它们
         destructuring: 'all',
         ignoreReadBeforeAssign: true,
       },
@@ -267,7 +263,7 @@ module.exports = defineConfig({
     // 把 var 语句看作是在块级作用域范围之内
     'block-scoped-var': 'error',
     // 要求使用 === 和 !==
-    'eqeqeq': ['error', 'smart'],
+    eqeqeq: ['error', 'smart'],
     // 禁用 Alert
     'no-alert': 'warn',
     // 禁止在 case 或 default 子句中出现词法声明

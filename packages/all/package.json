@@ -19,6 +19,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
+    "@xbmlz/eslint-config-prettier": "workspace:*",
     "@xbmlz/eslint-config-vue": "workspace:*"
   },
   "devDependencies": {
