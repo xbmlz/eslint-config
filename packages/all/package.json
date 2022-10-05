@@ -1,6 +1,6 @@
 {
   "name": "@xbmlz/eslint-config",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "ESLint config presets",
   "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
   "license": "MIT",
