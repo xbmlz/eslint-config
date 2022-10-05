@@ -1,6 +1,6 @@
 {
   "name": "@xbmlz/eslint-config-prettier",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "ESLint config preset",
   "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
   "license": "MIT",
