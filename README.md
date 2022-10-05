@@ -4,7 +4,7 @@
 
 ESLint config for JavaScript, TypeScript, Vue 2, Vue 3, Prettier.
 
-Forked from [xbmlz/eslint-config](https://github.com/antfu/eslint-config)
+Forked from [antfu/eslint-config](https://github.com/antfu/eslint-config)
 
 
 ## Usage
@@ -34,6 +34,14 @@ For example:
   "semi": false,
   "singleQuote": true
 }
+```
+
+### Recommended Config .gitattributes
+
+For example:
+
+```txt
+* text=auto eol=lf
 ```
 
 ### Add script for package.json
