@@ -6,8 +6,9 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
+  reportUnusedDisableDirectives: true,
   extends: [
-    'eslint:recommended',
+    './standard',
     'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
