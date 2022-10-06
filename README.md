@@ -63,7 +63,7 @@ Create .vscode/settings.json
 
 ```json
 {
-  "prettier.enable": false,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
