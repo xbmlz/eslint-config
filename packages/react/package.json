@@ -1,5 +1,5 @@
 {
-  "name": "@xbmlz/eslint-config-ts",
+  "name": "@xbmlz/eslint-config-react",
   "version": "0.1.15",
   "description": "ESLint config preset",
   "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
@@ -23,13 +23,14 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.39.0",
-    "@xbmlz/eslint-config-basic": "workspace:*",
-    "eslint-define-config": "^1.7.0"
+    "@xbmlz/eslint-config-ts": "workspace:*",
+    "eslint-define-config": "^1.7.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
     "eslint": "^8.23.0",
+    "react": "^18.2.0",
     "typescript": "^4.8.2"
   }
 }

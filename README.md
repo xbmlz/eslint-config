@@ -12,9 +12,15 @@ Forked from [antfu/eslint-config](https://github.com/antfu/eslint-config)
 ### Install
 
 ```bash
-pnpm add -D eslint @xbmlz/eslint-config
-```
+pnpm add -D eslint @xbmlz/eslint-config # JavaScript, TypeScript, Vue 2/3 and Prettier
 
+# Or yarn add -D / npm install -D
+pnpm i -D eslint @xbmlz/eslint-config-ts       # JavaScript and TypeScript
+pnpm i -D eslint @xbmlz/eslint-config-vue      # JavaScript, TypeScript and Vue 2/3 (Auto detect)
+pnpm i -D eslint @xbmlz/eslint-config-prettier # Prettier only
+pnpm i -D eslint @xbmlz/eslint-config-solid    # Solid, TypeScript
+pnpm i -D eslint @xbmlz/eslint-config-react    # React, TypeScript
+```
 ### Config `.eslintrc`
 
 ```json
