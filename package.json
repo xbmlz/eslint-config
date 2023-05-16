@@ -2,7 +2,7 @@
   "name": "@xbmlz/eslint-config-monorepo",
   "version": "0.1.16",
   "private": true,
-  "packageManager": "pnpm@7.1.0",
+  "packageManager": "pnpm@8.5.1",
   "author": "Xc Chen <chenxc170016@gmail.com> (https://github.com/xbmlz/)",
   "license": "MIT",
   "scripts": {
@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@xbmlz/eslint-config": "workspace:*",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.23.0",
-    "typescript": "^4.8.2"
+    "bumpp": "^9.1.0",
+    "eslint": "^8.40.0",
+    "typescript": "^5.0.4"
   }
 }
