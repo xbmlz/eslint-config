@@ -1,11 +1,12 @@
 # @xbmlz/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@xbmlz/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@xbmlz/eslint-config)
+[![NPM version](https://img.shields.io/npm/v/@xbmlz/eslint-config)](https://www.npmjs.com/package/@xbmlz/eslint-config)
+[![License](https://img.shields.io/npm/l/@xbmlz/eslint-config)](LICENSE)
+[![Downloads](https://img.shields.io/npm/dm/@xbmlz/eslint-config)](https://npm-stat.com/charts.html?package=@xbmlz/eslint-config)
 
-ESLint config for JavaScript, TypeScript, Vue 2, Vue 3, Prettier.
+ESLint config for JavaScript, TypeScript, Vue 2, Vue 3, React, SolidJS, Prettier.
 
 Forked from [antfu/eslint-config](https://github.com/antfu/eslint-config)
-
 
 ## Usage
 
@@ -15,11 +16,11 @@ Forked from [antfu/eslint-config](https://github.com/antfu/eslint-config)
 pnpm add -D eslint @xbmlz/eslint-config # JavaScript, TypeScript, Vue 2/3 and Prettier
 
 # Or yarn add -D / npm install -D
-pnpm i -D eslint @xbmlz/eslint-config-ts       # JavaScript and TypeScript
-pnpm i -D eslint @xbmlz/eslint-config-vue      # JavaScript, TypeScript and Vue 2/3 (Auto detect)
-pnpm i -D eslint @xbmlz/eslint-config-prettier # Prettier only
-pnpm i -D eslint @xbmlz/eslint-config-solid    # Solid, TypeScript
-pnpm i -D eslint @xbmlz/eslint-config-react    # React, TypeScript
+pnpm add -D eslint @xbmlz/eslint-config-ts       # JavaScript and TypeScript
+pnpm add -D eslint @xbmlz/eslint-config-vue      # JavaScript, TypeScript and Vue 2/3 (Auto detect)
+pnpm add -D eslint @xbmlz/eslint-config-prettier # Prettier only
+pnpm add -D eslint @xbmlz/eslint-config-solid    # SolidJS, TypeScript
+pnpm add -D eslint @xbmlz/eslint-config-react    # React, TypeScript
 ```
 ### Config `.eslintrc`
 
